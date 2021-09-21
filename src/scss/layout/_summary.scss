@@ -1,0 +1,42 @@
+.invalidate {
+    text-align: center;
+    margin: $spacing / 2 0;
+    text-transform: uppercase;
+}
+
+.summary-content {
+    margin-bottom: $spacing / 2 0;
+    p {
+        margin-bottom: .5rem;
+        span {
+            font-weight: $bold;
+            color: $blue;
+            font-size: 2.4rem;
+        }
+    }
+
+    .summary {
+
+        h3 {
+            margin: $spacing / 2 0;
+        }
+
+        
+    }
+
+    .summary-service {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #43453c;
+        .price {
+            font-size: 2.4rem;
+            font-weight: $bold;
+            color: $blue;
+        }
+    }
+}
+
+
+.total {
+    text-align: right;
+}

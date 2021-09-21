@@ -1,0 +1,38 @@
+.services-list {
+    @include tablet {
+        @include grid( 2, 2rem );
+    }
+   
+    .service {
+        margin-bottom: 2rem;
+        background-color: $white;
+        padding: $spacing/ 2;
+        border-radius: 1rem;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+
+        p {
+            margin: 0 0 $spacing / 4 0;
+        }
+
+        .service-name {
+            color: $black;
+        }
+        .service-price {
+            color: $blue;
+            margin: 0;
+            font-size: 3rem;
+            font-weight: $bold;
+        }
+
+        &.selected {
+            background-color: $blue;
+
+            p {
+                color: $white;
+            }
+        }
+    }
+}

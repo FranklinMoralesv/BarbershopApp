@@ -1,0 +1,36 @@
+body {
+    background-color: $black;
+}
+
+.barbershop-container {
+    
+    @include tablet {
+        height: 100vh;
+        @include grid(2, $spacing / 2 );
+    }
+
+    .image {
+        height: 30rem;
+        background-image: url(../../../build/img/1.webp);
+        background-size: cover;
+        background-position: center center;
+        @include tablet {
+            height: auto;
+        }
+    }
+}
+
+.app {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: $spacing / 2 ;
+
+    .section {
+        display: none;
+        margin-top: $spacing / 2;
+    }
+}
+
+.show-section {
+    display: block!important;
+}
